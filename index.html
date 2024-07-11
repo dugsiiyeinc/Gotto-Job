@@ -618,6 +618,135 @@ Find a job</button>
 </div>
 </div>
 </section>
+
+<!-- Testimonials -->
+<section>
+    <div class="container">
+        <div class="testimonials">
+            <h2>Happy Customers</h2>
+            <div class="reviews">
+                <div class="testimonial">
+                    <div class="top">
+                        <div class="info">
+                            <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/portrait-beautiful-young-woman.jpg" alt="customer">
+                            <div class="detail">
+                                <h4>Haley</h4>
+                                <span>Sales & Marketing</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="https://www.tooplate.com/templates/2134_gotto_job/images/left-quote.png" alt="quote">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="top">
+                        <div class="info">
+                            <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/blond-man-happy-expression.jpg" alt="customer">
+                            <div class="detail">
+                                <h4>Jackson</h4>
+                                <span>Dev Ops</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="https://www.tooplate.com/templates/2134_gotto_job/images/left-quote.png" alt="quote">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="top">
+                        <div class="info">
+                            <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/portrait-charming-middle-aged-attractive-woman-with-blonde-hair.jpg" alt="customer">
+                            <div class="detail">
+                                <h4>Susan L</h4>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="https://www.tooplate.com/templates/2134_gotto_job/images/left-quote.png" alt="quote">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="top">
+                        <div class="info">
+                            <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/medium-shot-smiley-senior-man.jpg" alt="customer">
+                            <div class="detail">
+                                <h4>Jack</h4>
+                                <span>Technical Lead</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/university-study-abroad-lifestyle-concept.jpg" alt="quote">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="top">
+                        <div class="info">
+                            <img src="https://www.tooplate.com/templates/2134_gotto_job/images/avatar/university-study-abroad-lifestyle-concept.jpg" alt="customer">
+                            <div class="detail">
+                                <h4>Kevin</h4>
+                                <span>Intership</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="https://www.tooplate.com/templates/2134_gotto_job/images/left-quote.png" alt="quote">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                    </div>
+                </div>
+                
+             </div>
+            <div class="navigation">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+             </div>
+        </div>
+    </div>
+</section>
+
+
 </main>
 
 <!-- JAVASCRIPT -->
@@ -639,6 +768,36 @@ icons[1].setAttribute('data-visible', "true");
 
 }
 });
-</script>
+
+         const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentIndex = 0;
+
+        function showTestimonials(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = 'none';
+            });
+            for (let i = 0; i < 2; i++) {
+                testimonials[(index + i) % testimonials.length].style.display = 'flex';
+            }
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[Math.floor(index / 2) % dots.length].classList.add('active');
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonials(index * 2);
+                currentIndex = index * 2;
+            });
+        });
+
+         setInterval(() => {
+            currentIndex = (currentIndex + 2) % testimonials.length;
+            showTestimonials(currentIndex);
+        }, 5000);
+
+         showTestimonials(currentIndex);
+  </script>
 </body>
 </html>
