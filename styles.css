@@ -222,6 +222,7 @@ font-weight: 800;
     }
     /*Categories  */
     .container .categories{
+      width: 100%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -245,8 +246,8 @@ font-weight: 800;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         background-color: #5d52ba;
         border: 10px solid #7f73eb;
         border-radius: 50%;
@@ -283,13 +284,14 @@ font-weight: 800;
 
       /* About Section */
       .about .container{
+        width: 100%;
         display: flex;
         align-items: center;
         gap: 1rem;
       }
           
           .about-info{
-            width: 261px;
+            width: 270px;
             height: 440px;
             background: url('https://www.tooplate.com/templates/2134_gotto_job/images/professional-asian-businesswoman-gray-blazer.jpg') no-repeat center/cover;
             border-top-left-radius: 50px;
