@@ -801,7 +801,84 @@ flex-wrap: wrap;
 .navigation .dot.active {
   background-color: #f65129;
 }
+/* Cta Section */
+.cta-section{
+  padding-top: 150px;
+  padding-bottom: 75px;
+}
+.cta{
+ 
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(246, 81, 41,0.8), rgba(246, 81, 41,0.8)), url('https://www.tooplate.com/templates/2134_gotto_job/images/millennial-group-young-businesspeople.jpg') no-repeat center/cover;
+color: rgb(246, 81, 41);  
+}
+  
+  .cta .cta-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* gap: 3rem; */
+  align-items: center;
+  justify-content: space-around;
+  }
+.cta-text {
+  
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: self-start; 
+}
+.cta-text h1 {
+  margin-bottom: 8px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 30px;
+  font-weight: 300;
+}
 
+.cta-text p {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.cta-buttons {
+  max-width: 100%;
+  width: 379.99px;
+  display: flex;
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+
+}
+
+.cta-buttons .btn-1{
+  padding: 15px 20px;
+  margin-right: 24px;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: rgb(246, 81, 41, 0.1);
+  color: white;
+  cursor: pointer;
+
+}
+.cta-buttons .btn-1:hover{
+background-color: white;
+color: #f65129;
+}
+.cta-buttons .btn-2{
+padding-bottom: 2px;
+color: rgb(255, 255, 255);
+background-color: rgba(246, 81, 41, 0.1);
+cursor: pointer;
+border:2px solid rgba(239, 71, 29, 0.1);
+}
+.cta-buttons .btn-2:hover{
+  text-decoration: underline;
+}
 
 
 /* RESPONSIVE/ SMARTPHONES */
@@ -1024,4 +1101,26 @@ bottom: 20%;
   font-size: 1rem;
   color: #717275;
 }
+/* Cta Section */
+.cta{
+  width: 100%;
+  height: 100%;
+
+}
+.cta .cta-container{
+  /* width: 100%; */
+  flex-direction: column;
+  gap: 2rem;
+  padding: 50px 0;
+  }
+  
+  .cta-text{
+    width: 100%;
+    padding: 0 20px;
+  
+  }
+  .cta-text h1{
+    font-size: 32px;
+    }
+
 }
