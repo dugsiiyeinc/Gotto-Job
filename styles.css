@@ -54,7 +54,7 @@ color: #f65129;
 .nav-links {
 display: flex;
 align-items: center;
-gap: 3rem;
+gap: 2rem;
 position: relative;
 z-index: 1001;
 
@@ -67,7 +67,7 @@ position: relative;
 .nav-links a{
 text-decoration: none;
 color: #666666;
-font-size: 1.5rem;
+font-size: 1.25rem;
 font-weight: 200;
 }
 .nav-links a:hover{
