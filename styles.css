@@ -135,7 +135,7 @@ align-items: self-start;
 font-size: 22px;
 }
 .hero-text h1{
-font-size: 62px;
+font-size: 4rem;
 font-weight: 800;
 }
 .hero-text a{
@@ -172,20 +172,23 @@ font-size: 2rem;
 font-weight: 800;
 }
 .inputs{
-display: flex;
+  width: 100%;
+ display: flex;
 gap: 1rem;
-}
+ }
 .inputs input{
+  width: 245px;
+  height: 50px;
 border: none;
 border-radius: 50px;
 padding: 16px 30px;
 text-align: center;
-
+  
 }
 .inputs i{
 color: #7f73eb;
 position: relative;
-left: 50px;
+left: 30px;
 
 }
 .hero-form .btn{
@@ -990,12 +993,12 @@ border-radius: 50%;
 .get-info-jobs .inputs input{
    width: 300px;
   height: 62px;
-  padding: 10px;
+  padding: 10px 30px;
 }
 .get-info-jobs .inputs .fa-regular.fa-user{
   position: relative;
   top: 0;
-  left: 10;
+  left: 12%;
  }
 .get-info-jobs .inputs  .fa-telegram{
   position: relative;
@@ -1146,6 +1149,12 @@ align-self: start;
 .inputs{
 flex-direction: column;
 }
+.inputs input{
+  width: 100%;
+ 
+ 
+}
+ 
 .badge{
 flex-direction: column;
 }
@@ -1326,7 +1335,8 @@ bottom: 20%;
      .get-info-jobs{
          height: 100%;
        width: 100%;
-         }
+          }
+          
         .get-info-jobs .inputs .fa-regular.fa-user{
           position: relative;
           top:50px;
