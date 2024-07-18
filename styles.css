@@ -920,6 +920,7 @@ border-radius: 50%;
   color: #5d52ba;
   font-size: 1.3rem;
 }
+ 
 .email{
   display: flex;
   gap: 1rem;
@@ -933,19 +934,14 @@ border-radius: 50%;
   display: flex;
   gap: 1rem;
 }
-.email:hover{
-  color: #f65129;
-}
-.phone:hover{
-  color: #f65129;
-}
-.info:hover{
-  color: #EC4E1B;
-}
+ 
 .contact span{
   font-size: 1rem;
   font-weight: 200;
   color: #666666;
+}
+.contact span:hover{
+  color: #f65129;
 }
 .company h1{
   font-size: 1.4rem;
