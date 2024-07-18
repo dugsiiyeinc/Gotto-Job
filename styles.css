@@ -174,21 +174,22 @@ font-weight: 800;
 .inputs{
   width: 100%;
  display: flex;
-gap: 1rem;
- }
+ gap: 1rem;
+  }
 .inputs input{
   width: 245px;
   height: 50px;
 border: none;
 border-radius: 50px;
-padding: 16px 30px;
-text-align: center;
+ text-align: center;
   
 }
 .inputs i{
 color: #7f73eb;
 position: relative;
-left: 30px;
+top: 0;
+left: 25%;
+font-size: 1rem;
 
 }
 .hero-form .btn{
@@ -650,7 +651,7 @@ position: relative;
 
 position: absolute;
 left: 20%;
-bottom: 20%;
+bottom: 30%;
     
   }
 .top-box .job-badge a{
@@ -1147,14 +1148,19 @@ align-self: start;
 }
  
 .inputs{
-flex-direction: column;
+ flex-direction: column;
 }
 .inputs input{
   width: 100%;
  
- 
 }
- 
+.hero-form .hero-icon  .fa-solid.fa-user-large,
+.fa-solid.fa-location-pin{
+  position: relative;
+  top: 35px;
+    left: 10%;
+    
+  }
 .badge{
 flex-direction: column;
 }
@@ -1280,8 +1286,8 @@ width: 100%;
 height: 100%;
 
 }
-.top-box .job-bad{
-bottom: 20%;
+.top-box .job-badge{
+bottom: 10%;
 
 }
 .reviews .testimonial {
