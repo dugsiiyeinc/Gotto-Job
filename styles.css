@@ -933,6 +933,15 @@ border-radius: 50%;
   display: flex;
   gap: 1rem;
 }
+.email:hover{
+  color: #f65129;
+}
+.phone:hover{
+  color: #f65129;
+}
+.info:hover{
+  color: #EC4E1B;
+}
 .contact span{
   font-size: 1rem;
   font-weight: 200;
@@ -949,6 +958,9 @@ border-radius: 50%;
   line-height: 2rem;
   color: #717275;
 }
+.company ul li:hover{
+  color: #EC4E1B;
+}
 .Resources h1{
   font-size: 1.4rem;
   font-weight: 700;
@@ -960,6 +972,9 @@ border-radius: 50%;
   line-height: 2rem;
   color: #717275;
   
+}
+.Resources ul li:hover{
+  color: #EC4E1B;
 }
 .Newsletter{
   display: flex;
@@ -1352,7 +1367,7 @@ bottom: 10%;
           position: relative;
           top: -68px;
            left: 28%;
-          
+           color: #5d52ba;
           
          }
          .bottom-footer {
