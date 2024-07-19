@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 body{
 font-family: "Sarabun", sans-serif;
-background-color: #f2f2f2;
+background-color: #fff;
 
 }
 header{
@@ -29,12 +29,15 @@ justify-content: space-between;
 align-items: center;
 padding: 8px 16px;
 }
-.navbar .logo{
+.navbar .logo a{
 display: flex;
 gap: 1rem;
 align-items: center;
+text-decoration: none;
+
 
 }
+ 
 .navbar .logo img{
 width: 65px;
 height: 65px;
@@ -54,7 +57,7 @@ color: #f65129;
 .nav-links {
 display: flex;
 align-items: center;
-gap: 2rem;
+gap: 3rem;
 position: relative;
 z-index: 1001;
 
@@ -87,26 +90,7 @@ color: #fff;
 background-color:#0dcaf0;
 color: #fff;
 }
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #fff;
-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-min-width: 150px;
-z-index: 1;
-}
-
-.dropdown-content li {
-margin: 0;
-}
-
-.dropdown-content a {
-padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
-}
+ 
 .hamburger{
 display: none;
 }
