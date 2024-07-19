@@ -1,132 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-
-body {
-    font-family: "Sarabun", sans-serif;
-    background-color: #f2f2f2;
+body{
+font-family: "Sarabun", sans-serif;
+background-color: #fff;
 
 }
-
-header {
-    width: 100%;
-    height: 6rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px 2px #706e6e;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header{
+width: 100%;
+height: 6rem;
+background-color: #fff;
+box-shadow: 0 0 10px 2px #706e6e;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
-
-.container {
-    max-width: min(90%, 1400px);
-    margin-inline: auto;
+.container{
+max-width: min(90%,1400px);
+margin-inline: auto;
 
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 16px;
 }
+.navbar .logo a{
+display: flex;
+gap: 1rem;
+align-items: center;
+text-decoration: none;
 
-.navbar .logo {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
 
 }
-
-.navbar .logo img {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
+.navbar .logo a:
+.navbar .logo img{
+width: 65px;
+height: 65px;
+border-radius: 50%;
 }
-
-.logo h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #5d52ba;
+.logo h1{
+font-size: 2rem;
+font-weight: 800;
+color: #5d52ba;
 }
-
-.logo h4 {
-    font-weight: 800;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #f65129;
+.logo h4{
+font-weight: 800;
+font-size: 12px;
+text-transform: uppercase;
+color: #f65129;
 }
-
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
-    z-index: 1001;
+display: flex;
+align-items: center;
+gap: 3rem;
+position: relative;
+z-index: 1001;
 
 }
-
-.nav-links li {
-    list-style: none;
-    position: relative;
+.nav-links  li{
+list-style: none;
+position: relative;
 
 }
-
-.nav-links a {
-    text-decoration: none;
-    color: #666666;
-    font-size: 1.25rem;
-    font-weight: 200;
+.nav-links a{
+text-decoration: none;
+color: #666666;
+font-size: 1.25rem;
+font-weight: 200;
 }
-
-.nav-links a:hover {
-    color: #f65129;
+.nav-links a:hover{
+color: #f65129;
 }
-
-.nav-links .register {
-    margin-left: 8rem;
+.nav-links a:active{
+  color: #f65129;
 }
-
-.nav-links .login {
-    background-color: #f65129;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-align: center;
-    color: #fff;
+.nav-links .register{
+margin-left: 8rem;
 }
-
-.nav-links .login:hover {
-    background-color: #0dcaf0;
-    color: #fff;
+.nav-links .login{
+background-color: #f65129;
+padding: 10px 20px;
+border-radius: 50px;
+text-align: center;
+color: #fff;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    min-width: 150px;
-    z-index: 1;
+.nav-links .login:hover{
+background-color:#0dcaf0;
+color: #fff;
 }
-
-.dropdown-content li {
-    margin: 0;
-}
-
-.dropdown-content a {
-    padding: 12px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.hamburger {
-    display: none;
+ 
+.hamburger{
+display: none;
 }
 
 /*job-detail */
@@ -310,6 +279,7 @@ header {
 .google {
     margin-top: -2rem;
     padding: 2rem;
+    width: 300px;
     display: flex;
     background-color: white;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -999,7 +969,9 @@ header {
       bottom: 10%;
       }
 
- 
+      .google {
+         width: 350px;
+    }
  
        /* Cta Section */
        .cta-section{
