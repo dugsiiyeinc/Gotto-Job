@@ -926,19 +926,16 @@ display: none;
       }
       .jobs .job-box{
       width: 100%;
-      height: 100%;
-      
+       
       }
       .top-box .job-badge{
       bottom: 10%;
       }
-   
-    
+      
       .google {
-        
-        width: 380px;
-        height: auto;
-        margin-top: 5rem;
+        width: 100%;
+         height: auto;
+       margin-top: 8rem;
 
       }
  
