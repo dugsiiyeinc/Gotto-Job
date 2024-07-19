@@ -114,25 +114,26 @@ header{
 
 /* About Section */
 .site-header{
+  display: flex;
+  align-items: center;
     width: 100%;
    height:400px;
     background: linear-gradient(rgba(93, 82, 186,0.8), rgba(93, 82, 186,0.8)), url('https://www.tooplate.com/templates/2134_gotto_job/images/site-header/close-up-young-business-team-working.jpg') no-repeat center/cover;
  }
-.site-header .container{
+.container .title{
    width: 100%;
-   height: 100%;
-   display: flex;
+    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    gap: 2rem;
 }
-.site-header .container h1{
+.container .title h1{
    font-size: 3rem;
    font-weight: 800;
    color: #fff;
 }
-.container .hero-links{
+.title .hero-links{
    display: flex;
    list-style: none;
    gap: 8px;
@@ -148,43 +149,34 @@ header{
 .hero-links .home:hover{
    color: #f65129;
 }
-.container .contacts{
-   width: 100%;
-   display: flex;
- padding: 150px 0; 
- gap: 3rem;
-}
-
- .about-us-container{
-    width: 100%;
-    display: flex;
-   
-    /* padding-bottom: 100px; */
-
-  }
+ 
   .container .about-us{
     width: 100%;
-   height:600px;
+    height:300px;
     display: flex;
-    gap: 2rem;
     align-items: center;
-    justify-content: center;
-  }
+     justify-content: center;
+     gap: 2rem;
+     margin-block: 5rem;
+
+   }
   .about-us .text{ 
+    
+    width: 475px;
+    height: 266px;
     display: flex;
     flex-direction: column;
-    width: 33.33%;
-    height: 350px;
-    /* text-align: center; */
-    align-items: center;
-  }
+     gap: 1rem;
+    justify-content: center;
+     }
+    
   .about-us .text h2{
-    font-size: 2rem;
-    font-weight: 600;
+     font-size: 2.5rem;
+    font-weight: 800;
   }
   .about-us .text h4{
-    font-size:1.5rem;
-    font-weight: 400;
+     font-size:1.5rem;
+    font-weight: 600;
   }
   .about-us .text p{
     font-size: 20px;
@@ -197,8 +189,7 @@ header{
     }
 
   .about-us .text .buttons{
-    margin-top: 24px;
-    font-size: 16px;
+     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
   }
@@ -224,9 +215,11 @@ header{
   }
   .about-us .image{
     position: relative;
-    width: 33.33%;
-    height: 350px;
-
+    display: flex;
+    align-items: center;
+    width: 475px;
+    height: 266px;
+  
   }
   .about-us .image img{
     width: 400px;
@@ -234,51 +227,55 @@ header{
     border-radius: 30px;
   }
   .image .badge{
+    width: 240px;
+    height: 108px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-     top: 200px;
-    padding: 20px;
-    margin: 0 20px;
-    margin-left: 150px;
-    border: 30px;
+     left: 30%;
+     bottom: 0;
+     padding: 20px;
+      border: 30px;
     background-color: rgb(93, 82, 186);
     color: white;
    border-radius: 30px;
     border-top:30px solid rgb(13, 202, 240);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
-    text-align: start;
+  }
+
+.container .services {
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  
 }
 
-.services {
-    text-align: center;
-    max-width: 1110px;
-    width: 100%;
-    padding-top: 100px;
-    padding-left: 100px;
-
-}
-
-h2 {
-    margin-bottom: 48px;
-    font-size: 48px;
-    font-weight: 600;
+.services h2 {
+     font-size: 3rem;
+    font-weight: 800;
 
 }
 
 .service-cards {
     display: flex;
     justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+
 }
 
 .service-card {
-    padding: 40px;
-    width: 100%;
-    transition: transform 0.3s;
-    margin: 20px;
-}
+  width: 355px;
+  height: 415px;
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+     padding: 40px;
+     transition: transform 0.3s;
+  }
 
 .service-card:hover {
     background-color: #e0f7fa;
@@ -291,22 +288,34 @@ h2 {
     border-top: 24.6667px solid #0dcaf0;
    border-radius: 24px;
 }
-
+.icon{
+  width: 120px;
+    height: 120px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
 .icon img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 20px;
-}
+  width: 50px;
+  height: 50px;
+  
+ }
 
-h3 {
+.service-card h3 {
     font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
+    font-weight: 800;
+ }
 
-p {
+.service-card p {
+  text-align: center;
     color: #666;
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 /* Testimonials */
@@ -750,59 +759,44 @@ p {
     display: none;
     }
 
-    .about-section{
-        width: 100%;
-    }
+   
 
     .about-us{
         width: 100%;
        flex-direction: column;
-       gap: 3rem;
-      }
+      
+        }
       .about-us .text{ 
         width: 100%;
-        padding-left: 10px;
-      }
+        margin-top: 5rem;
+          }
       .about-us .text h2{
         font-size: 2rem;
-        text-align: left;
-      }
-      .about-us .text h4{
-        font-size: 1.5rem;
-       text-align: left;
-      }
-      .about-us .text p{
-        font-size: 1rem;
-        text-align: left;
-      }
-      .about-us .text .buttons{
-        text-align: left;
-
-      }
+       }
+      
+    
+        
       .about-us .image{
         width: 100%;
+        align-items: center;
       }
       .about-us .image img{
         width: 100%;
         height: auto;
       }
-      .about-us .image .badge{
-        font-size: 1rem;
-        left: 0;
-        margin-top: -20px;
-        margin-right: 20px;
-        text-align: center;
-      }
-      .services {
+       
+      .container .services {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 40px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10rem;
+       
     
     }
       .services h2{
-        font-size: 1.9rem;
-        text-align: left;
-      }
+        font-size: 1.5rem;
+       }
       .service-cards {
         width: 100%;
      flex-direction: column;
@@ -812,8 +806,7 @@ p {
     }
     .service-card {
         width: 100%;
-        padding-left: 50px;
-      
+       
         
     }
     .reviews .testimonial {
