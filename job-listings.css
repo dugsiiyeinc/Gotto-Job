@@ -129,35 +129,52 @@ header {
     display: none;
 }
 
-.badge {
+/*job-listing */
+.job-listeting {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(93, 82, 186, 0.8), rgba(93, 82, 186, 0.8)), url('https://www.dmrict.com/templates/13/images/site-header/close-up-young-business-team-working.jpg') no-repeat bottom/cover;
 }
 
-.badge span {
+.container .site-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+ }
+ .container .site-header h1{
+    font-size: 3rem;
     font-weight: 800;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 600;
+    color: #fff;
 }
-
-.badge a {
-    text-decoration: none;
-    border: 1px solid #fff;
-    background-color: white;
-    font-size: 12px;
-    padding: 5px 12px;
+.container .hero-links{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    color: #5d52ba;
+    background-color: #fff;
+    padding: 12px 20px;
     border-radius: 50px;
+}
+.hero-links a{
+    text-decoration: none;
     color: #5d52ba;
 }
-
-.badge a:hover {
-    background-color: #5d52ba;
-    color: white;
+.hero-links .home:hover{
+    color: #f65129;
 }
 
+
+.hero-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .hero-form .btn {
     padding: 16px 30px;
     border-radius: 50px;
@@ -166,7 +183,6 @@ header {
     color: #fff;
     font-size: 1rem;
 }
-
 .hero-form .btn:hover {
     background-color: #0dcaf0;
 }
@@ -178,272 +194,6 @@ header {
     left: 50px;
 
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container .jobs{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-      padding: 100px 0;
-    }
-    .jobs .job-title{
-    width: 50%;
-    height: 141px;
-    display: flex;
-    flex-direction: column;
-    
-      }
-      .job-title h2{
-      font-size: 3rem;
-      font-weight: 800;
-    
-      }
-      .job-title p{
-      font-size: 22px;
-      color: #717275;
-      }
-      .container .all-jobs{
-      width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 7rem;
-    
-            }
-      .all-jobs .top-job-lists{
-        width: 100%;
-      display: flex;
-      gap: 2rem;
-      }
-      .all-jobs .down-job-lists{
-      display: flex;
-      gap: 2rem;
-      }
-    .jobs .job-box{
-    width: 500px;
-    height: 650px;
-      display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    border: 1px solid #7777;
-    
-    }
-    .jobs .job-box:hover{
-      box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
-    }
-    .job-box .top-box{
-    position: relative;
-      width: 100%;
-      height:50%;
-    }
-    .job-box .top-box img{
-      width: 100%;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    
-    }
-    .top-box .job-badge{
-    
-    position: absolute;
-    left: 20%;
-    bottom: 20%;
-        
-      }
-    .top-box .job-badge a{
-    text-decoration: none;
-    font-size: 14px;
-    }
-    .job-box .job-body h4{
-    font-size: 2rem;
-    font-weight: 800;
-    }
-    .job-box .job-body h4:hover{
-    color: #f65129;
-    }
-    .job-box .job-body{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 10px 20px ;
-      }
-    .job-box .middle-box{
-      display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 18px;
-    color: #717275;
-    }
-    .job-box .job-wrap{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    .job-box .job-wrap img{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    }
-    
-    .job-box .middle-box .icons{
-    color: #5d52ba;
-    display: flex;
-    gap: 1rem;
-    }
-    .job-box .middle-box .icons:hover{
-    color: #f65129;
-    }
-    
-    .job-box .job-info .job-detail{
-    font-size: 18px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    
-    }
-    .job-thumb{
-        width: 100%;
-        height: 150px;
-        padding: 25px;
-        
-        display: flex;
-        gap: 3rem;
-        } 
-        .job-thumb:hover{
-        background-color: #fff;
-        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
-        
-        }
-        .job-thumb img{
-        width: 100px;
-        height: 100px;
-        background-color: #fff;
-        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        padding: 20px;
-        }
-        .job-body{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        }
-        .job-info{
-        flex-direction: column;
-        display: flex;
-        gap: 1rem;
-        }
-        .job-info h4{
-        font-size: 2rem;
-        font-weight: 800;
-        }
-        .job-info h4:hover{
-        color: #f65129;
-        }
-        .job-detail{
-        font-size: 20px;
-        color: #717275;
-        display: flex;
-        gap: 4rem;
-        }
-        .job-detail i{
-        color: #5d52ba;
-        }
-        .job-detail a{
-        text-decoration: none;
-        }
-        .job-badge{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        }
-        .job-badge .position{
-        font-size: 14px;
-        background-color: #5d52ba;
-        padding: 5px 10px;
-        color: #fff;
-        border-radius: 50px;
-        }
-        .job-badge .type{
-        font-size: 14px;
-        background-color: #f0f8ff;
-        padding: 5px 10px;
-        color: #5d52ba;
-        border-radius: 50px;
-        
-        }
-        .job-badge .position:hover{
-        background-color: #f65129;
-        }
-        .job-badge .type:hover{
-        background-color: #f65129;
-        color: #fff;
-        }
-        .job-btn{
-        display:flex ;
-        align-items: center;
-        }
-        .job-btn a{
-        text-decoration: none;
-        background-color: #f65129;
-        color: #fff;
-        padding: 16px 30px;
-        border-radius: 50px;
-        margin-left: 24px;
-        }
-        .job-btn a:hover{
-          background-color: #0dcaf0;
-        }
-/*job-listing */
-.job-listeting {
-    background: linear-gradient(rgba(93, 82, 186, 0.8), rgba(93, 82, 186, 0.8)), url('https://www.dmrict.com/templates/13/images/site-header/close-up-young-business-team-working.jpg') no-repeat bottom/cover;
-    height: 70vh;
-}
-
-.container {
-    max-width: min(90%, 1400px);
-    margin-inline: auto;
-}
-
-.text-desc {
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    text-align: center;
-}
-
-.text-desc h1 {
-    font-size: 3.6rem;
-    font-weight: 900;
-    line-height: 5rem;
-    color: white;
-}
-
-.text-desc button {
-    font-size: 0.8rem;
-    border: none;
-    background-color: white;
-    width: 50%;
-    padding: 0.5rem;
-    border-radius: 4rem;
-    color: #717275;
-}
-
-.text-desc button em {
-    color: #7f73eb;
-    font-style: normal;
-    font-weight: normal;
-}
-
-.hero-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 
 .inputs {
     display: flex;
@@ -515,7 +265,222 @@ header {
 .btn {
     width: 100%;
 }
+.badge {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
 
+.badge span {
+    font-weight: 800;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: white;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    color: #5d52ba;
+}
+
+.badge a:hover {
+    background-color: #5d52ba;
+    color: white;
+}
+
+.container .jobs{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+      padding: 100px 0;
+    }
+    .jobs .job-title{
+    width: 100%;
+     display: flex;
+    flex-direction: column;
+    
+      }
+      .job-title h2{
+      font-size: 3rem;
+      font-weight: 800;
+    
+      }
+       
+      .container .all-jobs{
+      width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    
+            }
+      .all-jobs .top-job-lists{
+        width: 100%;
+      display: flex;
+      gap: 2rem;
+      }
+      .all-jobs .middle-job-lists{
+      display: flex;
+      gap: 2rem;
+      }
+      .all-jobs .bottom-job-lists{
+      display: flex;
+      gap: 2rem;
+      }
+    .jobs .job-box{
+    width: 500px;
+    height: 650px;
+      display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #7777;
+    
+    }
+    .jobs .job-box:hover{
+      box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
+    }
+    .job-box .top-box{
+    position: relative;
+      width: 100%;
+      height:50%;
+    }
+    .job-box .top-box img{
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    
+    }
+    .top-box .job-badge{
+    
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+        
+      }
+    .top-box .job-badge a{
+    text-decoration: none;
+    font-size: 14px;
+    }
+    .job-box .job-body h4{
+    font-size: 2rem;
+    font-weight: 800;
+    }
+    .job-box .job-body h4:hover{
+    color: #f65129;
+    }
+    .job-box .job-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 20px ;
+      }
+    .job-box .middle-box{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #717275;
+    }
+    .job-box .job-wrap{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .job-box .job-wrap img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    }
+    
+    .job-box .middle-box .icons{
+    color: #5d52ba;
+    display: flex;
+    gap: 1rem;
+    }
+    .job-box .middle-box .icons:hover{
+    color: #f65129;
+    }
+    
+    .job-box .job-info .job-detail{
+    font-size: 18px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    job-info{
+        flex-direction: column;
+        display: flex;
+        gap: 1rem;
+        }
+        .job-info h4{
+        font-size: 2rem;
+        font-weight: 800;
+        }
+        .job-info h4:hover{
+        color: #f65129;
+        }
+        .job-detail{
+        font-size: 20px;
+        color: #717275;
+        display: flex;
+        gap: 3rem;
+        }
+        .job-detail i{
+        color: #5d52ba;
+        }
+        .job-detail a{
+        text-decoration: none;
+        }
+        .job-badge{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        }
+        .job-badge .position{
+        font-size: 14px;
+        background-color: #5d52ba;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 50px;
+        }
+        .job-badge .type{
+        font-size: 14px;
+        background-color: #f0f8ff;
+        padding: 5px 10px;
+        color: #5d52ba;
+        border-radius: 50px;
+        
+        }
+        .job-badge .position:hover{
+        background-color: #f65129;
+        }
+        .job-badge .type:hover{
+        background-color: #f65129;
+        color: #fff;
+        }
+        .job-btn{
+        display:flex ;
+        align-items: center;
+        }
+        .job-btn a{
+        text-decoration: none;
+        background-color: #f65129;
+        color: #fff;
+        padding: 16px 30px;
+        border-radius: 50px;
+        margin-left: 24px;
+        }
+        .job-btn a:hover{
+          background-color: #0dcaf0;
+        }
 
 /* Cta Section */
 .cta-section {
@@ -594,8 +559,8 @@ header {
     text-decoration: underline;
 }
 
- /* FOOTER */
- .container .footer{
+   /* FOOTER */
+.container .footer{
     width: 100%;
     display: flex;
     align-items: center;
@@ -817,6 +782,7 @@ header {
   .arrow:hover{
     background-color: #EC4E1B;
   }
+  
 
 
 
@@ -872,216 +838,122 @@ header {
         display: none;
     }
 
-    .hero .container {
-        flex-direction: column;
-        gap: 2rem;
-        padding: 50px 0;
-    }
+    
 
-    .hero-text h6 {
-        font-size: 16px;
-    }
-
-    .hero-text h1 {
-        font-size: 32px;
-    }
+     
 
     .hero-form {
         width: 100%;
         height: 100%;
-        align-self: start;
+     }
+     .dream h1 {
+         font-size: 1.75rem;
     }
-
+    
     .inputs {
         flex-direction: column;
+    }
+    .inputs i {
+        color: #7f73eb;
+        position: relative;
+        top: 35px;
+        left: 50px;
+    
     }
 
     .badge {
         flex-direction: column;
     }
-
-    .categories h2 {
-        font-size: 2rem;
-    }
-
-    .categories-list {
-        justify-content: center;
-    }
-
-    /* About Section */
-    .about .container {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .about-info {
-        width: 100%;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 0;
-
-    }
-
-    .about-info .info {
-        right: 15px;
-        bottom: 40px;
-
-    }
-
-    .text-block {
-        width: 100%;
-        padding: 10px;
-
-    }
-
-    .text-block h2 {
-        font-size: 2rem;
-    }
-
-    .text-block p {
-        font-size: 1rem;
-    }
-
-    .text-block .btns {
-        gap: 1rem;
-    }
-
-    .instagram-block {
-        width: 100%;
-
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-    }
-
-    /* About section */
-    .container .feature-content {
-        width: 100%;
-    }
-
-    .job-thumb {
-        width: 100%;
-        height: 350px;
-        gap: 1rem;
-    }
-
-    .job-body {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .job-info h4 {
-        font-size: 1.5rem;
-    }
-
-    .job-detail {
-        flex-direction: column;
-        gap: 1rem;
-        font-size: 1rem;
-        font-weight: normal;
-
-    }
-
-    .container .block {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .block .text {
-        width: 100%;
-        height: 100%;
-        padding: 30px 25px;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        border-bottom-left-radius: 0;
-    }
-
-    .text h2 {
-        font-size: 2rem;
-    }
-
-    .counter .number-text1 .number1,
-    .number-text2 .number2 {
-        font-size: 3rem;
-    }
-
-    .counter .number-text1 .text1,
-    .number-text2 .text2 {
-        font-size: 1rem;
-    }
-
-    .container .video {
-        width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 50px;
-        border-bottom-left-radius: 50px;
-
-    }
-
-    .jobs .job-title {
-        width: 100%;
-
-
-    }
-
-    .job-title h2 {
-        font-size: 1.5rem;
-
-    }
-
-    .job-title p {
-        font-size: 20px;
-    }
-
-    .all-jobs .top-job-lists {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .all-jobs .down-job-lists {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .jobs .job-box {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .top-box .job-badge {
-        bottom: 10%;
-
-    }
-
-    .reviews .testimonial {
-        width: 100%;
-        padding: 0 20px;
-        justify-content: center;
-    }
-
-    .top .info h4 {
-        font-size: 1rem;
-    }
-
-    .top .info span {
-        font-size: 14px;
-    }
-
-    .top .stars {
-        color: #f65129;
-    }
-
-    .quote {
-        display: flex;
-        justify-content: center;
-    }
-
-    .quote h4 {
-        font-size: 1rem;
-        color: #717275;
-    }
-
+        /* joblisting */
+        .job-listeting{
+            width: 100%;
+        }
+        .text-desc {
+            top: 35%;
+            left: 50%;
+        }
+        
+        .inputs input {
+            border: none;
+            border-radius: 50px;
+            padding: 16px 30px;
+            text-align: center;
+            width: 100%;
+        }
+    
+        .optional {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .form-option {
+            display: flex;
+            gap: 1rem;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 3rem;
+            width: 100%;
+        }
+    
+        .dream {
+            display: flex;
+            align-items: center;
+            background-color: #7066cc;
+            height: 100vh;
+            margin-top: 4rem;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+    
+        .badge {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+    
+        .text-desc {
+            position: absolute;
+            top: 35%;
+            left: 20%;
+            text-align: center;
+        }
+     
+        .container .jobs{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          .jobs .job-title{
+          width: 100%;
+          }
+          .job-title h2{
+          font-size: 1.5rem;
+          
+          }
+          .job-title p{
+          font-size: 20px;
+          }
+          .all-jobs .top-job-lists{
+          width: 100%;
+          flex-direction: column;
+          }
+          .all-jobs .middle-job-lists{
+          width: 100%;
+          flex-direction: column;
+          }
+          .all-jobs .bottom-job-lists{
+          width: 100%;
+          flex-direction: column;
+          }
+          .jobs .job-box{
+          width: 100%;
+          height: 100%;
+          
+          }
+          .top-box .job-badge{
+          bottom: 10%;
+          
+          }
     /* Cta Section */
     .cta-section {
         padding: 50px 0;
@@ -1098,102 +970,46 @@ header {
     .cta-text h1 {
         font-size: 2rem;
     }
-    /* joblisting */
-    .job-listeting{
-        width: 100%;
-    }
-    .text-desc {
-        top: 35%;
-        left: 50%;
-    }
+
+  /* Footer */
+  .top-footer{
+    width: 100%;
+     flex-direction: column;
+     gap: 1rem;
     
-    .inputs input {
-        border: none;
-        border-radius: 50px;
-        padding: 16px 30px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .optional {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-option {
-        display: flex;
-        gap: 1rem;
-        background-color: white;
-        padding: 1rem;
-        border-radius: 3rem;
-        width: 100%;
-    }
-
-    .dream {
-        display: flex;
-        align-items: center;
-        background-color: #7066cc;
-        height: 100vh;
-        margin-top: 4rem;
-        border-radius: 1rem;
-        padding: 1rem;
-    }
-
-    .badge {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    /* Footer */
-    .top-footer{
-        width: 100%;
-         flex-direction: column;
-         gap: 1rem;
+   }
+   .get-info-jobs .inputs{
+      height: 100%;
+     width: 100%;
+        }
+        
+      .get-info-jobs .inputs .fa-regular.fa-user{
+         top:40%;
+        left: -30%;
+          }
+      .get-info-jobs .inputs  .fa-telegram{
+        position: relative;
+        top: -42%;
+        left: 30%;
+         
         
        }
-       .get-info-jobs .inputs{
-          height: 100%;
+       .bottom-footer {
          width: 100%;
-            }
-            
-          .get-info-jobs .inputs .fa-regular.fa-user{
-             top:0;
-            left: 15%;
-              }
-          .get-info-jobs .inputs  .fa-telegram{
-            position: relative;
-            top: 0;
-            right: 0;
-             
-            
-           }
-           .bottom-footer {
-             width: 100%;
-             height: 10rem;
-             overflow: hidden;
-           }
-           .copyright{
-             flex-direction: column;
-          }
-          .link-and-text{
-             flex-direction: column;
-             gap: 0;
-          }
-          .copyright span{
-             font-size: 12px;
-           }
-
-
-    .text-desc {
-        position: absolute;
-        top: 35%;
-        left: 20%;
-        text-align: center;
-    }
-
-    /* .inputs {
-        display: flex;
-    } */
+         height: 10rem;
+         overflow: hidden;
+       }
+       .copyright{
+         flex-direction: column;
+      }
+      .link-and-text{
+         flex-direction: column;
+         gap: 0;
+      }
+      .copyright span{
+         font-size: 12px;
+       }
+  
 
    
 
