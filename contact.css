@@ -207,6 +207,7 @@ display: none;
   form .inputs{
     width: 100%;
       display: flex;
+      flex-wrap: wrap;
         justify-content: space-between;
  
      }
@@ -635,10 +636,15 @@ em:hover{
  
  
   form .inputs{
-    width: 100%;
+    max-width: 100%;
       flex-direction: column;
-   
-      }
+    
+       }
+       .inputs input{
+        width: 100%;
+        height: 100%
+       
+    }
       /* Cta Section */
 .cta-section{
   padding: 50px 0;
