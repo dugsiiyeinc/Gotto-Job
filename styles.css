@@ -120,7 +120,8 @@ background: linear-gradient(rgba(93, 82, 186,0.8), rgba(93, 82, 186,0.8)), url('
 .hero .container{
 width: 100%;
 height: 100%;
-display: flex;
+display: grid;
+grid-template-columns: repeat(2,1fr);
 align-items: center;
 justify-content: space-between;
 }
@@ -522,14 +523,14 @@ margin-left: 24px;
   background-color: #0dcaf0;
 }
 .container .block{
-  /* width: 100%; */
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
     align-items: center;
 }
 .block .text{
-  width: 50%;
-  height: 560px;
+   height: 560px;
     display: flex;
   flex-direction: column;
     gap: 2rem;
@@ -565,8 +566,7 @@ margin-left: 24px;
   font-size: 20px;
 }
 .container .video{
-  width: 50%;
-  height: 560px;
+   height: 560px;
   background: url('https://www.tooplate.com/templates/2134_gotto_job/images/people-working-as-team-company.jpg') no-repeat center/cover;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -1142,8 +1142,8 @@ display: block;
 display: none;
 }
 .hero .container{
-flex-direction: column;
-gap: 2rem;
+  grid-template-columns: 1fr;
+ gap: 2rem;
 padding: 50px 0;
 }
 .hero-text h6{
@@ -1245,9 +1245,9 @@ font-weight: normal;
 
 }   
 .container .block{
-flex-direction: column;
-gap: 0;
-}     
+  grid-template-columns: 1fr;
+  gap: 0;
+ }     
 .block .text{
 width: 100%;
 height: 100%;
@@ -1272,10 +1272,13 @@ border-bottom-right-radius: 50px;
 border-bottom-left-radius: 50px;
 
 }
+.container .jobs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .jobs .job-title{
 width: 100%;
-
-
 }
 .job-title h2{
 font-size: 1.5rem;
