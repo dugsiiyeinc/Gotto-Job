@@ -37,8 +37,7 @@ text-decoration: none;
 
 
 }
-.navbar .logo a:
-.navbar .logo img{
+ .navbar .logo img{
 width: 65px;
 height: 65px;
 border-radius: 50%;
@@ -968,9 +967,12 @@ display: none;
       .top-box .job-badge{
       bottom: 10%;
       }
-
+      .job-Description {
+        width: 100%;
+        align-items: center;
+    }
       .google {
-         width: 350px;
+         width:460px;
     }
  
        /* Cta Section */
