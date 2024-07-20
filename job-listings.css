@@ -135,15 +135,13 @@ display: none;
     color: #f65129;
 }
 
-.container.dream {
+.container.search-job {
   width: 100%;
-  height: 300px;
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #7f73eb;
-  height: 70vh;
-  margin-top: 4rem;
+   margin-top: 4rem;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -153,6 +151,7 @@ display: none;
     gap: 2rem;
 }
 .hero-form .btn {
+  width: 100%;
     padding: 16px 30px;
     border-radius: 50px;
     background-color: #5d52ba;
@@ -180,15 +179,15 @@ display: none;
 .inputs input {
     border: none;
     border-radius: 50px;
-    padding: 16px 30px;
+    padding: 16px 20px;
     text-align: center;
-    width: 90vh;
-
+    width: 400px;
+ 
 }
 
 
 
-.dream h1 {
+.search-job h1 {
     color: white;
     font-size: 2rem;
     font-weight: 800;
@@ -201,7 +200,7 @@ display: none;
     gap: 2rem;
 }
 
-.optional {
+.options {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,15 +213,15 @@ display: none;
     background-color: white;
     padding: 1rem;
     border-radius: 3rem;
-    width: 30%;
+    width: 100%;
 
 }
 
-.optional i {
+.options i {
     color: #5d52ba;
 }
 
-#cars {
+#option-text {
     font-weight: 200;
     font-size: 1rem;
     background-color: white;
@@ -231,9 +230,7 @@ display: none;
     width: 100%;
 }
 
-.btn {
-    width: 100%;
-}
+ 
 .badge {
     display: flex;
     flex-wrap: wrap;
@@ -815,11 +812,11 @@ display: none;
         width: 100%;
         height: 100%;
      }
-     .container.dream {
+     .container.search-job {
        width: 100%;
        height: 100%;
     } 
-     .dream h1 {
+     .search-job h1 {
          font-size: 1.75rem;
     }
     
@@ -833,7 +830,7 @@ display: none;
         left: 50px;
     
     }
-
+  
     .badge {
         flex-direction: column;
     }
@@ -854,10 +851,9 @@ display: none;
             width: 100%;
         }
     
-        .optional {
-            display: flex;
-            flex-direction: column;
-        }
+        .options {
+           flex-direction: column;
+      }
     
         .form-option {
             display: flex;
@@ -868,15 +864,7 @@ display: none;
             width: 100%;
         }
     
-        .dream {
-            display: flex;
-            align-items: center;
-            background-color: #7066cc;
-            height: 100vh;
-            margin-top: 4rem;
-            border-radius: 1rem;
-            padding: 1rem;
-        }
+      
     
         .badge {
             display: flex;
