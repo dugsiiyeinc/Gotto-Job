@@ -229,7 +229,7 @@ display: none;
   width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+      align-items: center;
     gap: 2rem;
   
 }
@@ -744,15 +744,17 @@ display: none;
 
    
 
-    .about-us{
-        width: 100%;
-       flex-direction: column;
-      
-        }
+    .container .about-us{
+      width: 100%;
+      height:auto;
+      flex-wrap: wrap;
+      gap: 3rem;
+         
+  
+     }
       .about-us .text{ 
         width: 100%;
-        margin-top: 5rem;
-          }
+           }
       .about-us .text h2{
         font-size: 2rem;
        }
@@ -761,8 +763,8 @@ display: none;
         
       .about-us .image{
         width: 100%;
-        align-items: center;
-      }
+        margin-top: 3rem;
+       }
       .about-us .image img{
         width: 100%;
         height: auto;
@@ -836,12 +838,19 @@ display: none;
 
 
                 /* Footer */
-    .top-footer{
-        width: 100%;
-         flex-direction: column;
-         gap: 1rem;
-        
-       }
+                .top-footer{
+                  width: 100%;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  gap: 0;
+                   
+                 }
+                 .com-res{
+                  margin-top: 3rem;
+                 }
+                 .Newsletter{
+                  margin-top: 2rem;
+                 }
        .get-info-jobs .inputs{
           height: 100%;
          width: 100%;
