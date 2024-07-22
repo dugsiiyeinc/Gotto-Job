@@ -1333,9 +1333,16 @@ bottom: 10%;
     /* Footer */
     .top-footer{
       width: 100%;
-       flex-direction: column;
-       gap: 1rem;
-      
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0;
+       
+     }
+     .com-res{
+      margin-top: 3rem;
+     }
+     .Newsletter{
+      margin-top: 2rem;
      }
      .get-info-jobs{
          height: 100%;
